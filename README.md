@@ -5,8 +5,8 @@ The system helps users organize their tasks by allowing them to create, view, ed
 
 
 ---Developer---
-Remart S. Belhida
-BSIT 2 SEC 1
+Clif Jhonford Abanes
+BSIT 2 SEC 3
 Personal Task Manager  
 Laravel Project
 
