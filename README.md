@@ -72,3 +72,47 @@ personal-task-manager/
 │   └── web.php
 │
 └── README.md
+
+Setup Instructions
+1. **Start XAMPP**
+   Open the XAMPP Control Panel and start the **Apache** and **MySQL** modules.
+
+2. **Create the database**
+   Go to `http://localhost/phpmyadmin` and create a new database matching the `DB_DATABASE` value you'll set in `.env` (e.g. `task_manager`).
+
+3. **Install PHP dependencies**
+   ```bash
+   composer install
+   ```
+
+4. **Create the environment file**
+   ```bash
+   cp .env.example .env
+   ```
+
+5. **Generate the application key**
+   ```bash
+   php artisan key:generate
+   ```
+
+6. **Run fresh database migrations**
+   ```bash
+   php artisan migrate:fresh
+   ```
+
+7. **Start the development server**
+   ```bash
+   php artisan serve
+   ```
+
+8. **Open the app in your browser**
+   ```
+   http://127.0.0.1:8000
+   ```
+
+> In your `.env` file, make sure `DB_CONNECTION=mysql`, `DB_HOST=127.0.0.1`, `DB_PORT=3306`, and `DB_USERNAME=root` with an empty `DB_PASSWORD` (XAMPP's default MySQL credentials), unless you've changed them in XAMPP.
+
+## Screenshots
+
+<img width="4160" height="3120" alt="IMG_20260926_030739_225" src="https://github.com/user-attachments/assets/2baa47df-fa4b-4fb1-8a55-6e4047dc3412" />
+<img width="4160" height="3120" alt="IMG_20260926_030804_595" src="https://github.com/user-attachments/assets/64ed134e-ca93-474d-a287-90e026f9103a" />
