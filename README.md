@@ -5,8 +5,10 @@ The system helps users organize their tasks by allowing them to create, view, ed
 
 
 ---Developer---
+WST21-PM-2026-SF
 Clif Jhonford Abanes
 BSIT 2 SEC 3
+MySQL / MariaDB
 Personal Task Manager  
 Laravel Project
 
